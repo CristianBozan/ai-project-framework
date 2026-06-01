@@ -1,0 +1,35 @@
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (se projetos derivados usarem)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (se projetos derivados usarem)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Build e artefatos temporários
+dist/
+build/
+*.log
+*.tmp

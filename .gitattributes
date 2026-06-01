@@ -1,0 +1,12 @@
+# Normaliza line endings para LF em todos os arquivos de texto
+* text=auto eol=lf
+
+# Markdown sempre LF
+*.md text eol=lf
+
+# Arquivos binários — sem conversão
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
