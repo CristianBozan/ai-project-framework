@@ -26,7 +26,7 @@ RECEBER TAREFA
      │
      ▼
 [1. ANÁLISE] ──────────────────────────────────────────────
-     │  • Ler PROJECT_CONTEXT.md e STATUS.md               │
+     │  • Ler project/PROJECT_CONTEXT.md e project/STATUS.md │
      │  • Identificar escopo, impacto e dependências        │
      │  • Levantar dúvidas ANTES de prosseguir             │
      ▼                                                      │
@@ -60,8 +60,8 @@ RECEBER TAREFA
 
 O AI deve, obrigatoriamente:
 
-1. Ler `PROJECT_CONTEXT.md` — entender objetivos, restrições e decisões vigentes.
-2. Ler `STATUS.md` — entender fase atual, bloqueios e próximos passos.
+1. Ler `project/PROJECT_CONTEXT.md` — entender objetivos, restrições e decisões vigentes.
+2. Ler `project/STATUS.md` — entender fase atual, bloqueios e próximos passos.
 3. Verificar se existe documentação relevante em `docs/` para a tarefa.
 4. Verificar se há padrões aplicáveis em `standards/`.
 
@@ -95,7 +95,7 @@ Aguardando confirmação para prosseguir.
 
 | Tipo | Local | Quando criar |
 |------|-------|-------------|
-| Contexto do projeto | `PROJECT_CONTEXT.md` | Setup inicial e mudanças de escopo |
+| Contexto do projeto | `project/PROJECT_CONTEXT.md` | Setup inicial e mudanças de escopo |
 | Decisões técnicas (ADR) | `docs/decisions/ADR-XXXX.md` | Toda decisão arquitetural relevante |
 | Documentação de API | `docs/api/` | Ao criar ou modificar APIs |
 | Fluxos de negócio | `docs/business/` | Ao definir fluxos e regras de negócio |
@@ -265,7 +265,7 @@ Usuário aprova ou redireciona
 AI registra ADR em docs/decisions/
      │
      ▼
-AI atualiza PROJECT_CONTEXT.md se a decisão afeta a visão geral
+AI atualiza project/PROJECT_CONTEXT.md se a decisão afeta a visão geral
 ```
 
 ### 8.3 Decisões que o AI pode tomar autonomamente
@@ -376,11 +376,11 @@ Local: `docs/brainstorms/YYYY-MM-DD-[slug-do-tema].md`
 A revisão é conduzida como uma sessão estruturada com o seguinte roteiro:
 
 ```
-1. STATUS.md — está atualizado e preciso?
+1. project/STATUS.md — está atualizado e preciso?
 2. Backlog — prioridades ainda fazem sentido? Itens a adicionar ou descartar?
 3. Decisões técnicas — alguma decisão precisa ser revisitada?
 4. Brainstorms abertos — algum deve ser convertido em tarefa ou descartado?
-5. PROJECT_CONTEXT.md — o contexto ainda reflete a realidade do projeto?
+5. project/PROJECT_CONTEXT.md — o contexto ainda reflete a realidade do projeto?
 6. Padrões — algum padrão em standards/ precisa ser criado ou atualizado?
 7. Riscos — novos riscos identificados? Bloqueios antigos resolvidos?
 8. Próximo ciclo — quais são as prioridades até a próxima revisão?
@@ -390,7 +390,7 @@ A revisão é conduzida como uma sessão estruturada com o seguinte roteiro:
 
 Ao final de cada revisão, o AI atualiza:
 
-- `STATUS.md` com o resultado da revisão e próximos passos.
+- `project/STATUS.md` com o resultado da revisão e próximos passos.
 - `docs/backlog.md` com as mudanças de prioridade acordadas.
 - Qualquer ADR ou documento que tenha ficado desatualizado.
 
@@ -410,8 +410,8 @@ Ao final de cada revisão, o AI atualiza:
 
 ```
 AI_PROJECT_PROTOCOL.md   ← Este arquivo. Regras da colaboração.
-PROJECT_CONTEXT.md        ← O quê e por quê do projeto.
-STATUS.md                 ← Onde estamos agora.
+project/PROJECT_CONTEXT.md ← O quê e por quê do projeto.
+project/STATUS.md          ← Onde estamos agora.
 README.md                 ← Como usar o projeto.
 docs/
   decisions/              ← ADRs

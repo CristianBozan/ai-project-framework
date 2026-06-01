@@ -32,8 +32,8 @@ Framework Base Projetos/
 ├── START_NEW_PROJECT.md         ← Guia passo a passo para iniciar projetos
 ├── AI_PROJECT_PROTOCOL.md       ← Regras de colaboração entre você e o AI
 ├── SKILLS_INDEX.md              ← Mapa: qual especialista acionar por tipo de tarefa
-├── PROJECT_CONTEXT.md           ← Preenchido por projeto (vazio no template)
-├── STATUS.md                    ← Estado atual (vazio no template)
+├── project/PROJECT_CONTEXT.md           ← Preenchido por projeto (vazio no template)
+├── project/STATUS.md                    ← Estado atual (vazio no template)
 │
 ├── skills/                      ← Especialistas ativáveis
 │   ├── business_analyst.md      ← Requisitos, descoberta e regras de negócio
@@ -106,8 +106,8 @@ Confirme que todos os arquivos estão presentes antes de usar:
 ✓ START_NEW_PROJECT.md
 ✓ AI_PROJECT_PROTOCOL.md
 ✓ SKILLS_INDEX.md
-✓ PROJECT_CONTEXT.md (vazio)
-✓ STATUS.md (vazio)
+✓ project/PROJECT_CONTEXT.md (vazio)
+✓ project/STATUS.md (vazio)
 ✓ skills/ (9 arquivos)
 ✓ standards/ (5 arquivos)
 ✓ templates/ (5 arquivos)
@@ -161,7 +161,7 @@ Confirme que leu e aguarde minha instrução.
 Ative a skill business_analyst.
 Leia o arquivo skills/business_analyst.md.
 
-PROJECT_CONTEXT.md está vazio — inicie o Modo de Descoberta.
+project/PROJECT_CONTEXT.md está vazio — inicie o Modo de Descoberta.
 Conduza a entrevista estruturada para descobrir o projeto.
 ```
 
@@ -176,11 +176,11 @@ Bloco 5 → Restrições
 Bloco 6 → Riscos
 ```
 
-Ao final, o AI gera o `PROJECT_CONTEXT.md` para sua aprovação.
+Ao final, o AI gera o `project/PROJECT_CONTEXT.md` para sua aprovação.
 
 ### 4. Gerar backlog e arquitetura
 
-Após aprovar o PROJECT_CONTEXT.md, o AI gera:
+Após aprovar o project/PROJECT_CONTEXT.md, o AI gera:
 - `docs/backlog.md` — todas as tarefas priorizadas
 - Stack tecnológica com justificativas
 - Estrutura de pastas do projeto
@@ -320,14 +320,14 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 ║  Bloco 5: Restrições                                     ║
 ║  Bloco 6: Riscos                                         ║
 ║       ↓                                                  ║
-║  PROJECT_CONTEXT.md gerado e aprovado                    ║
+║  project/PROJECT_CONTEXT.md gerado e aprovado                    ║
 ║                                                          ║
 ╠══════════════════════════════════════════════════════════╣
 ║              PLANEJAMENTO (project_manager)              ║
 ╠══════════════════════════════════════════════════════════╣
 ║                                                          ║
 ║  docs/backlog.md gerado e priorizado                     ║
-║  STATUS.md inicializado                                  ║
+║  project/STATUS.md inicializado                                  ║
 ║                                                          ║
 ╠══════════════════════════════════════════════════════════╣
 ║              ARQUITETURA                                 ║
@@ -336,7 +336,7 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 ║  Stack definida e justificada                            ║
 ║  Estrutura de pastas criada                              ║
 ║  ADRs em docs/decisions/                                 ║
-║  PROJECT_CONTEXT.md atualizado                           ║
+║  project/PROJECT_CONTEXT.md atualizado                           ║
 ║                                                          ║
 ╠══════════════════════════════════════════════════════════╣
 ║              CICLO DE DESENVOLVIMENTO                    ║
@@ -358,7 +358,7 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 ║  │       ↓                                    │        ║
 ║  │  Checklist da skill + standards            │        ║
 ║  │       ↓                                    │        ║
-║  │  Atualizar STATUS.md e documentação        │        ║
+║  │  Atualizar project/STATUS.md e documentação        │        ║
 ║  │       ↓                                    │        ║
 ║  │  Próxima tarefa ────────────────────────── ┘        ║
 ║  │                                                      ║
@@ -366,10 +366,10 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 ║              REVISÃO PERIÓDICA (project_manager)         ║
 ╠══════════════════════════════════════════════════════════╣
 ║                                                          ║
-║  STATUS.md atualizado e preciso?                         ║
+║  project/STATUS.md atualizado e preciso?                         ║
 ║  Backlog repriorizado?                                   ║
 ║  Decisões e riscos revisados?                            ║
-║  PROJECT_CONTEXT.md ainda reflete a realidade?           ║
+║  project/PROJECT_CONTEXT.md ainda reflete a realidade?           ║
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
@@ -383,8 +383,8 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 | Entender as regras da colaboração com o AI | `AI_PROJECT_PROTOCOL.md` |
 | Saber qual skill ativar para uma tarefa | `SKILLS_INDEX.md` |
 | Iniciar um novo projeto passo a passo | `START_NEW_PROJECT.md` |
-| Entender o contexto do projeto atual | `PROJECT_CONTEXT.md` |
-| Ver o que está em andamento e o que vem a seguir | `STATUS.md` |
+| Entender o contexto do projeto atual | `project/PROJECT_CONTEXT.md` |
+| Ver o que está em andamento e o que vem a seguir | `project/STATUS.md` |
 | Ver todas as tarefas e prioridades | `docs/backlog.md` |
 | Ver as decisões técnicas tomadas | `docs/decisions/` |
 | Usar um especialista | `skills/[nome].md` |
@@ -411,8 +411,8 @@ Sim, mas modifique na cópia do projeto, não no original. Se encontrar uma melh
 **O AI precisa ser o Claude Code?**
 O framework foi projetado para Claude Code (Claude Sonnet), mas os princípios funcionam com qualquer AI conversacional. A qualidade do resultado depende da capacidade do modelo de seguir instruções complexas e manter contexto.
 
-**E se o PROJECT_CONTEXT.md ficar desatualizado?**
-O `AI_PROJECT_PROTOCOL.md` define revisão periódica (Seção 11) que inclui validar se o PROJECT_CONTEXT.md ainda reflete a realidade. Se algo mudou — novo objetivo, nova restrição, nova decisão técnica — atualize imediatamente.
+**E se o project/PROJECT_CONTEXT.md ficar desatualizado?**
+O `AI_PROJECT_PROTOCOL.md` define revisão periódica (Seção 11) que inclui validar se o project/PROJECT_CONTEXT.md ainda reflete a realidade. Se algo mudou — novo objetivo, nova restrição, nova decisão técnica — atualize imediatamente.
 
 ---
 

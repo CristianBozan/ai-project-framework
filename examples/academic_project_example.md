@@ -149,9 +149,10 @@ O protótipo precisa demonstrar o ciclo completo: dado → modelo → alerta →
 ```
 sentineledu/
 ├── AI_PROJECT_PROTOCOL.md
-├── PROJECT_CONTEXT.md
-├── STATUS.md
 ├── README.md
+├── project/
+│   ├── PROJECT_CONTEXT.md
+│   └── STATUS.md
 │
 ├── docs/
 │   ├── decisions/

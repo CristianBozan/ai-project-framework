@@ -127,9 +127,10 @@ O MVP entrega valor imediato com escopo mínimo. Tudo que não está aqui é bac
 ```
 portfolio/
 ├── AI_PROJECT_PROTOCOL.md       ← Protocolo de colaboração com AI
-├── PROJECT_CONTEXT.md           ← Contexto, objetivos e decisões do projeto
-├── STATUS.md                    ← Estado atual e próximos passos
 ├── README.md                    ← Como rodar o projeto
+├── project/
+│   ├── PROJECT_CONTEXT.md       ← Contexto, objetivos e decisões do projeto
+│   └── STATUS.md                ← Estado atual e próximos passos
 │
 ├── docs/
 │   ├── decisions/

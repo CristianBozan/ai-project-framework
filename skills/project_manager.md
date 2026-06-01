@@ -25,7 +25,7 @@ Garantir que o projeto avance de forma previsível, com escopo controlado, prior
 
 ## Responsabilidades
 
-- Manter `STATUS.md` atualizado e preciso ao fim de cada sessão.
+- Manter `project/STATUS.md` atualizado e preciso ao fim de cada sessão.
 - Manter `docs/backlog.md` organizado, priorizado e sem itens obsoletos.
 - Quebrar épicos e features em tarefas atômicas e executáveis.
 - Identificar e registrar dependências entre tarefas.
@@ -46,13 +46,13 @@ Garantir que o projeto avance de forma previsível, com escopo controlado, prior
 - [ ] Riscos identificados e registrados
 
 ### Execução
-- [ ] STATUS.md atualizado ao início e fim de cada sessão
+- [ ] project/STATUS.md atualizado ao início e fim de cada sessão
 - [ ] Bloqueios registrados com descrição e o que é necessário para desbloquear
 - [ ] Scope creep identificado e tratado (aceito com justificativa ou rejeitado)
 - [ ] Tarefas concluídas marcadas no backlog com data
 
 ### Fechamento de entrega
-- [ ] STATUS.md reflete o estado final da entrega
+- [ ] project/STATUS.md reflete o estado final da entrega
 - [ ] Tarefas concluídas arquivadas no backlog
 - [ ] Aprendizados e decisões de processo registrados
 - [ ] Próximo ciclo planejado ou próximos passos definidos
@@ -60,7 +60,7 @@ Garantir que o projeto avance de forma previsível, com escopo controlado, prior
 ### Revisão periódica
 - [ ] Pauta seguida (ver AI_PROJECT_PROTOCOL.md Seção 11)
 - [ ] Backlog revisado e repriorizado
-- [ ] PROJECT_CONTEXT.md validado — ainda reflete a realidade?
+- [ ] project/PROJECT_CONTEXT.md validado — ainda reflete a realidade?
 - [ ] Riscos reavaliados
 
 ---
@@ -74,7 +74,7 @@ Estas perguntas guiam toda sessão de planejamento ou revisão:
 3. **As prioridades do backlog ainda fazem sentido?** Algo mudou que altera a ordem?
 4. **Tem algo crescendo em escopo silenciosamente?** Estamos construindo mais do que foi acordado?
 5. **Quais são os riscos ativos?** O que pode atrasar ou comprometer a entrega?
-6. **O STATUS.md reflete a realidade de hoje?** Alguém lendo agora teria a visão correta?
+6. **O project/STATUS.md reflete a realidade de hoje?** Alguém lendo agora teria a visão correta?
 7. **O que pode ser cortado sem impactar o objetivo principal?** Qual é o MVP desta entrega?
 8. **Quais decisões foram tomadas nesta sessão** que precisam ser registradas?
 
@@ -84,7 +84,7 @@ Estas perguntas guiam toda sessão de planejamento ou revisão:
 
 O trabalho do Project Manager está completo quando:
 
-- `STATUS.md` está atualizado e qualquer pessoa pode entender o estado do projeto sem perguntar nada.
+- `project/STATUS.md` está atualizado e qualquer pessoa pode entender o estado do projeto sem perguntar nada.
 - O backlog não tem itens sem prioridade, duplicados ou com descrição vaga.
 - Todos os bloqueios estão registrados com o que é necessário para resolvê-los.
 - O próximo passo está claro — não há dúvida sobre o que será feito a seguir.

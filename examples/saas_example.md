@@ -139,9 +139,10 @@ SaaS de gestão de tickets de suporte para PMEs: inbox unificado (e-mail + Whats
 ```
 flowdesk/
 ├── AI_PROJECT_PROTOCOL.md
-├── PROJECT_CONTEXT.md
-├── STATUS.md
 ├── README.md
+├── project/
+│   ├── PROJECT_CONTEXT.md
+│   └── STATUS.md
 │
 ├── docs/
 │   ├── decisions/

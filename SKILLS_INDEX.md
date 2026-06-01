@@ -47,7 +47,7 @@
 | Planejar um ciclo de trabalho | **project_manager** |
 | Priorizar o backlog | **project_manager** |
 | Quebrar uma feature grande em tarefas | **project_manager** + skill do domínio |
-| Atualizar o STATUS.md | **project_manager** |
+| Atualizar o project/STATUS.md | **project_manager** |
 | Identificar e registrar bloqueios | **project_manager** |
 | Identificar e registrar riscos | **project_manager** |
 | Conduzir revisão periódica do projeto | **project_manager** |

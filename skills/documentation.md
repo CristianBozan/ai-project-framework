@@ -54,7 +54,7 @@ Garantir que o conhecimento do projeto está capturado de forma que qualquer pes
 - [ ] Sem seções vazias ou placeholders não preenchidos
 
 ### Qualidade
-- [ ] Escrito no idioma definido em `PROJECT_CONTEXT.md`
+- [ ] Escrito no idioma definido em `project/PROJECT_CONTEXT.md`
 - [ ] Sem repetição desnecessária entre seções
 - [ ] Sem documentação contradizendo o comportamento atual
 - [ ] Documentação obsoleta removida ou marcada com `[DEPRECATED]`

@@ -14,12 +14,12 @@ Garantir que qualquer pessoa (ou AI) chegando ao projeto consiga entender o cont
 ## Critérios Obrigatórios
 
 ### O que sempre deve estar documentado
-- **Por que o projeto existe** — problema resolvido e objetivos (`PROJECT_CONTEXT.md`).
+- **Por que o projeto existe** — problema resolvido e objetivos (`project/PROJECT_CONTEXT.md`).
 - **Como rodar o projeto** — pré-requisitos, instalação e execução (`README.md`).
 - **Decisões arquiteturais relevantes** — contexto, decisão e consequências (`docs/decisions/`).
 - **Contratos de API** — endpoints, parâmetros, respostas e erros (`docs/api/`).
 - **Regras de negócio não óbvias** — o que o código implementa mas não explica (`docs/business/`).
-- **Estado atual do projeto** — fase, bloqueios e próximos passos (`STATUS.md`).
+- **Estado atual do projeto** — fase, bloqueios e próximos passos (`project/STATUS.md`).
 
 ### O que nunca deve ser documentado no código
 - O que o código faz — nomes claros já comunicam isso.
@@ -43,7 +43,7 @@ Garantir que qualquer pessoa (ou AI) chegando ao projeto consiga entender o cont
 - Nunca deixar documentação que contradiz o comportamento atual do sistema.
 
 ### Linguagem e formato
-- Linguagem padrão do projeto definida em `PROJECT_CONTEXT.md` — seguida por toda documentação.
+- Linguagem padrão do projeto definida em `project/PROJECT_CONTEXT.md` — seguida por toda documentação.
 - Markdown é o formato padrão para toda documentação textual.
 - Títulos seguem hierarquia (H1 → H2 → H3) — nunca pular nível.
 - Listas são usadas para enumerações, tabelas para comparações, código para exemplos técnicos.
@@ -88,7 +88,7 @@ Use antes de considerar qualquer feature, decisão ou mudança de comportamento 
 Um projeto é considerado aceitável em documentação quando:
 
 - `README.md` permite que alguém novo rode o projeto sem assistência.
-- `PROJECT_CONTEXT.md` explica o problema e os objetivos de forma que qualquer colaborador entenda.
+- `project/PROJECT_CONTEXT.md` explica o problema e os objetivos de forma que qualquer colaborador entenda.
 - Toda decisão arquitetural relevante dos últimos 6 meses tem ADR correspondente.
 - Nenhuma documentação contradiz o comportamento atual do sistema.
 - APIs públicas têm contratos documentados e atualizados.

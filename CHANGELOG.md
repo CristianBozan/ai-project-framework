@@ -14,17 +14,17 @@ Versão inicial do framework. Estabelece a estrutura base de governança para de
 ### Adicionado
 
 #### Estrutura Base
-- `AI_PROJECT_PROTOCOL.md` — protocolo de colaboração entre humano e AI com 13 seções: princípios, fluxo obrigatório, análise, documentação, implementação, testes, STATUS.md, decisões técnicas, brainstorms, backlog, revisão periódica, comunicação e referência rápida
-- `PROJECT_CONTEXT.md` — arquivo-fonte de verdade do projeto (vazio no template, preenchido por projeto)
-- `STATUS.md` — rastreamento do estado atual do projeto (vazio no template)
+- `AI_PROJECT_PROTOCOL.md` — protocolo de colaboração entre humano e AI com 13 seções: princípios, fluxo obrigatório, análise, documentação, implementação, testes, project/STATUS.md, decisões técnicas, brainstorms, backlog, revisão periódica, comunicação e referência rápida
+- `project/PROJECT_CONTEXT.md` — arquivo-fonte de verdade do projeto (vazio no template, preenchido por projeto)
+- `project/STATUS.md` — rastreamento do estado atual do projeto (vazio no template)
 - `README.md` — documentação completa do framework com instalação, uso, fluxo e FAQ
 - `START_NEW_PROJECT.md` — guia passo a passo de 9 etapas para iniciar novos projetos
 - `SKILLS_INDEX.md` — mapa de ativação de skills por tipo de tarefa, palavras-chave e combinações frequentes
 - `CHANGELOG.md` — este arquivo
 
 #### Sistema de Skills (9 especialistas)
-- `skills/business_analyst.md` — análise de requisitos e regras de negócio com **Modo de Descoberta** especial para PROJECT_CONTEXT.md vazio (entrevista estruturada de 6 blocos)
-- `skills/project_manager.md` — planejamento, backlog, STATUS.md e revisão periódica
+- `skills/business_analyst.md` — análise de requisitos e regras de negócio com **Modo de Descoberta** especial para project/PROJECT_CONTEXT.md vazio (entrevista estruturada de 6 blocos)
+- `skills/project_manager.md` — planejamento, backlog, project/STATUS.md e revisão periódica
 - `skills/ui_ux.md` — fluxos de usuário, arquitetura de informação e design de interface
 - `skills/frontend.md` — componentes, telas, integração com APIs e acessibilidade no código
 - `skills/backend.md` — APIs, lógica de negócio, autenticação e integrações
@@ -48,10 +48,10 @@ Versão inicial do framework. Estabelece a estrutura base de governança para de
 - `templates/risk_template.md` — probabilidade × impacto, plano de mitigação e de contingência
 
 #### Sistema de Descoberta
-- Modo de Descoberta integrado à skill `business_analyst` — ativado automaticamente quando `PROJECT_CONTEXT.md` está vazio
+- Modo de Descoberta integrado à skill `business_analyst` — ativado automaticamente quando `project/PROJECT_CONTEXT.md` está vazio
 - Entrevista estruturada em 6 blocos sequenciais: Problema, Usuários e Stakeholders, Objetivos e Métricas, MVP e Requisitos, Restrições, Riscos
 - Protocolo de confirmação por bloco — AI só avança após aprovação explícita do usuário
-- Geração do `PROJECT_CONTEXT.md` bloqueada até entrevista concluída e aprovada
+- Geração do `project/PROJECT_CONTEXT.md` bloqueada até entrevista concluída e aprovada
 
 #### Exemplos de Referência (4 projetos)
 - `examples/portfolio_example.md` — projeto solo, baixa complexidade, Next.js + Vercel

@@ -134,9 +134,10 @@ Loja virtual com catálogo gerenciável, carrinho, checkout com Stripe, área do
 ```
 loja-natura-organica/
 ├── AI_PROJECT_PROTOCOL.md
-├── PROJECT_CONTEXT.md
-├── STATUS.md
 ├── README.md
+├── project/
+│   ├── PROJECT_CONTEXT.md
+│   └── STATUS.md
 │
 ├── docs/
 │   ├── decisions/

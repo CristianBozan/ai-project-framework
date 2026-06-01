@@ -13,8 +13,8 @@ Você tem a pasta `Framework Base Projetos` com a seguinte estrutura:
 ```
 Framework Base Projetos/
 ├── AI_PROJECT_PROTOCOL.md
-├── PROJECT_CONTEXT.md
-├── STATUS.md
+├── project/PROJECT_CONTEXT.md
+├── project/STATUS.md
 ├── README.md
 ├── SKILLS_INDEX.md
 ├── START_NEW_PROJECT.md
@@ -148,14 +148,14 @@ O AI conduzirá uma sessão de perguntas cobrindo:
 
 ---
 
-## Etapa 6 — Gerar o PROJECT_CONTEXT.md
+## Etapa 6 — Gerar o project/PROJECT_CONTEXT.md
 
 Com a descoberta concluída, instrua o AI:
 
 ```
 Com base na nossa conversa de descoberta:
 
-1. Preencha o arquivo PROJECT_CONTEXT.md usando o template
+1. Preencha o arquivo project/PROJECT_CONTEXT.md usando o template
    em templates/project_context_template.md como base.
 
 2. Onde não tivermos informação definida,
@@ -164,7 +164,7 @@ Com base na nossa conversa de descoberta:
 3. Apresente o resultado para minha revisão antes de salvar.
 ```
 
-**Revise o PROJECT_CONTEXT.md gerado verificando:**
+**Revise o project/PROJECT_CONTEXT.md gerado verificando:**
 
 - [ ] O problema está descrito sem mencionar a solução?
 - [ ] Os usuários e seus contextos estão corretos?
@@ -176,7 +176,7 @@ Com base na nossa conversa de descoberta:
 
 Aprove ou corrija antes de prosseguir.
 
-> PROJECT_CONTEXT.md é a fonte de verdade do projeto.
+> project/PROJECT_CONTEXT.md é a fonte de verdade do projeto.
 > O AI o lerá no início de cada sessão futura.
 > Vale 30 minutos a mais para deixá-lo correto.
 
@@ -190,7 +190,7 @@ Com o contexto aprovado, instrua o AI:
 Ative a skill project_manager.
 Leia o arquivo skills/project_manager.md.
 
-Com base no PROJECT_CONTEXT.md aprovado:
+Com base no project/PROJECT_CONTEXT.md aprovado:
 
 1. Crie o arquivo docs/backlog.md usando
    templates/backlog_template.md como base.
@@ -224,7 +224,7 @@ Com backlog aprovado, instrua o AI:
 ```
 Agora vamos definir a arquitetura do projeto.
 
-Com base no PROJECT_CONTEXT.md e no backlog:
+Com base no project/PROJECT_CONTEXT.md e no backlog:
 
 1. Proponha a stack tecnológica justificando cada escolha.
 
@@ -234,7 +234,7 @@ Com base no PROJECT_CONTEXT.md e no backlog:
 
 4. Crie os ADRs principais em docs/decisions/.
 
-5. Atualize PROJECT_CONTEXT.md com as decisões tomadas
+5. Atualize project/PROJECT_CONTEXT.md com as decisões tomadas
    nas seções de Stack e Arquitetura de Alto Nível.
 
 Apresente cada proposta separadamente para minha aprovação
@@ -262,7 +262,7 @@ Com contexto, backlog e arquitetura aprovados, instrua o AI:
 Setup do projeto está completo.
 
 Antes de iniciar:
-1. Atualize o STATUS.md com a fase atual e os primeiros passos.
+1. Atualize o project/STATUS.md com a fase atual e os primeiros passos.
 2. Confirme qual é a primeira tarefa do backlog a ser implementada.
 
 Consulte SKILLS_INDEX.md para identificar qual skill ativar
@@ -284,7 +284,7 @@ Implementação incremental
     ↓
 Testes
     ↓
-Atualizar STATUS.md e docs
+Atualizar project/STATUS.md e docs
 ```
 
 ---
@@ -308,7 +308,7 @@ Atualizar STATUS.md e docs
 [5] DESCOBERTA
     Problema → Usuários → Objetivos → Restrições → Escopo do MVP
 
-[6] PROJECT_CONTEXT.md
+[6] project/PROJECT_CONTEXT.md
     Preencher com template → Revisar → Aprovar
 
 [7] BACKLOG
@@ -318,7 +318,7 @@ Atualizar STATUS.md e docs
     Stack → Estrutura de pastas → ADRs → Aprovar
 
 [9] DESENVOLVIMENTO
-    Atualizar STATUS.md → Primeira tarefa → SKILLS_INDEX.md → Implementar
+    Atualizar project/STATUS.md → Primeira tarefa → SKILLS_INDEX.md → Implementar
 ```
 
 ---
@@ -329,8 +329,8 @@ Atualizar STATUS.md e docs
 |---------|---------|
 | `AI_PROJECT_PROTOCOL.md` | Regras de colaboração com o AI |
 | `SKILLS_INDEX.md` | Mapa de qual skill ativar por tipo de tarefa |
-| `templates/project_context_template.md` | Base para o PROJECT_CONTEXT.md |
-| `templates/status_template.md` | Base para o STATUS.md |
+| `templates/project_context_template.md` | Base para o project/PROJECT_CONTEXT.md |
+| `templates/status_template.md` | Base para o project/STATUS.md |
 | `templates/backlog_template.md` | Base para o docs/backlog.md |
 | `templates/decision_template.md` | Base para ADRs em docs/decisions/ |
 | `templates/risk_template.md` | Base para docs/risks.md |
