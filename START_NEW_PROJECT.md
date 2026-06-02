@@ -28,23 +28,52 @@ Framework Base Projetos/
 
 ---
 
-## Etapa 1 — Copiar o Framework
+## Etapa 1 — Obter o Framework
 
-Copie a pasta `Framework Base Projetos` completa para o local onde seus projetos ficam armazenados.
+Escolha uma das três formas abaixo. Se tiver dúvida, use o **Caminho A**.
+
+### Caminho A — "Use this template" no GitHub (recomendado)
+
+Use quando quer criar um repositório GitHub para o projeto.
 
 ```
-Antes:
-  Documentos/
-  └── Framework Base Projetos/   ← original (nunca edite este)
-
-Depois:
-  Documentos/
-  ├── Framework Base Projetos/   ← original intacto
-  └── [Projetos]/
-      └── meu-projeto/           ← cópia que você vai usar
+1. Acesse github.com/CristianBozan/ai-project-framework
+2. Clique em "Use this template" → "Create a new repository"
+3. Dê o nome do projeto em kebab-case (ex: loja-natura-organica)
+4. Escolha Public ou Private
+5. Clique em "Create repository"
+6. Clone o repositório novo:
+   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   cd nome-do-projeto
 ```
 
-> A pasta original é o molde. Nunca edite diretamente — sempre trabalhe na cópia.
+**Resultado:** repositório novo e limpo, sem o histórico do framework.
+
+---
+
+### Caminho B — `degit` (sem criar repo no GitHub agora)
+
+```bash
+npx degit CristianBozan/ai-project-framework nome-do-projeto
+cd nome-do-projeto
+git init
+git add .
+git commit -m "feat: setup from ai-project-framework"
+```
+
+**Resultado:** pasta local com os arquivos do framework e histórico git limpo.
+
+---
+
+### Caminho C — Download ZIP (sem terminal)
+
+```
+1. Acesse github.com/CristianBozan/ai-project-framework
+2. Clique em "Code" → "Download ZIP"
+3. Extraia e renomeie a pasta para o nome do seu projeto
+```
+
+> Primeira vez usando o framework? Leia `GETTING_STARTED.md` antes de continuar.
 
 ---
 

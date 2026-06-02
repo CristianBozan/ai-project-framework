@@ -7,6 +7,22 @@
 
 ---
 
+## [1.2.0] — 2026-06-01
+
+Guia para iniciantes com análise de situações e instalação clara.
+
+### Adicionado
+
+- `GETTING_STARTED.md` — guia completo para iniciantes com 6 análises de situação (portfólio, TCC, MVP, freela, aprendizado, SaaS), 3 caminhos de instalação com árv ore de decisão, perguntas frequentes de iniciantes e tabela de armadilhas comuns
+
+### Atualizado
+
+- `START_NEW_PROJECT.md` — Etapa 1 substituída pelos 3 caminhos de instalação (Use this template, degit, ZIP) com instruções passo a passo e referência ao GETTING_STARTED.md
+- `START_LITE_PROJECT.md` — Etapa 1 atualizada da mesma forma
+- `README.md` — seção de instalação com os 3 caminhos, checklist atualizado com GETTING_STARTED.md, referência rápida prioriza o guia para quem está começando
+
+---
+
 ## [1.1.0] — 2026-06-01
 
 Adição do modo Lite, licença MIT e guia de contribuição.

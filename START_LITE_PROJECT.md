@@ -21,14 +21,37 @@
 
 ---
 
-## Etapa 1 — Copiar e Renomear
+## Etapa 1 — Obter o Framework
 
-Copie a pasta `Framework Base Projetos` e renomeie com o nome do projeto:
+Escolha uma das três formas abaixo. Se tiver dúvida, use o **Caminho A**.
+
+### Caminho A — "Use this template" no GitHub (recomendado)
 
 ```
-Copie:   Framework Base Projetos/
-Para:    nome-do-projeto/
+1. Acesse github.com/CristianBozan/ai-project-framework
+2. Clique em "Use this template" → "Create a new repository"
+3. Dê o nome do projeto (ex: portfolio-pessoal)
+4. Escolha Public ou Private → "Create repository"
+5. git clone https://github.com/seu-usuario/nome-do-projeto.git
+   cd nome-do-projeto
 ```
+
+### Caminho B — `degit` (local, sem GitHub agora)
+
+```bash
+npx degit CristianBozan/ai-project-framework nome-do-projeto
+cd nome-do-projeto
+git init && git add . && git commit -m "feat: setup from ai-project-framework"
+```
+
+### Caminho C — Download ZIP
+
+```
+github.com/CristianBozan/ai-project-framework → "Code" → "Download ZIP"
+Extraia e renomeie a pasta.
+```
+
+> Primeira vez usando o framework? Leia `GETTING_STARTED.md` antes de continuar.
 
 ---
 

@@ -81,49 +81,55 @@ Framework Base Projetos/
 
 ## Instalação
 
-O framework não tem dependências. A "instalação" é uma cópia de pasta.
+> Primeira vez? Leia `GETTING_STARTED.md` — tem o caminho certo para cada situação (portfólio, TCC, freela, MVP, aprendizado).
 
-### Passo 1 — Baixar ou clonar
+O framework não tem dependências de código. A instalação é obter os arquivos e abrir no editor.
 
-**Opção A — Download direto:**
-Baixe a pasta `Framework Base Projetos` e coloque em um local fixo no seu computador.
+### Caminho A — "Use this template" no GitHub (recomendado)
 
-**Opção B — Git clone:**
+```
+1. Acesse github.com/CristianBozan/ai-project-framework
+2. Clique em "Use this template" → "Create a new repository"
+3. Nome do projeto em kebab-case (ex: portfolio-pessoal)
+4. Public ou Private → "Create repository"
+5. git clone https://github.com/seu-usuario/nome-do-projeto.git
+```
+
+### Caminho B — `degit` (local, sem GitHub agora)
+
 ```bash
-git clone [url-do-repositorio] "Framework Base Projetos"
+npx degit CristianBozan/ai-project-framework nome-do-projeto
+cd nome-do-projeto
+git init && git add . && git commit -m "feat: setup from ai-project-framework"
 ```
 
-### Passo 2 — Definir a pasta original como somente leitura (recomendado)
-
-A pasta original é o **molde**. Nunca edite ela diretamente.
+### Caminho C — Download ZIP
 
 ```
-Documentos/
-├── Framework Base Projetos/   ← molde original (não editar)
-└── Projetos/
-    └── meu-projeto/           ← cópia de trabalho
+github.com/CristianBozan/ai-project-framework → "Code" → "Download ZIP"
 ```
 
-### Passo 3 — Verificar a estrutura
+### Verificar a estrutura
 
-Confirme que todos os arquivos estão presentes antes de usar:
+Confirme que todos os arquivos estão presentes:
 
 ```
 ✓ README.md
+✓ GETTING_STARTED.md
 ✓ START_NEW_PROJECT.md
 ✓ START_LITE_PROJECT.md
 ✓ AI_PROJECT_PROTOCOL.md
 ✓ SKILLS_INDEX.md
-✓ project/PROJECT_CONTEXT.md (vazio — modo Completo)
-✓ project/STATUS.md (vazio — modo Completo)
-✓ project-lite/PROJECT_CONTEXT.md (vazio — modo Lite)
-✓ project-lite/STATUS.md (vazio — modo Lite)
+✓ project/PROJECT_CONTEXT.md     (modo Completo)
+✓ project/STATUS.md              (modo Completo)
+✓ project-lite/PROJECT_CONTEXT.md (modo Lite)
+✓ project-lite/STATUS.md          (modo Lite)
 ✓ skills/ (9 arquivos)
 ✓ standards/ (5 arquivos)
 ✓ templates/ (5 arquivos)
 ✓ examples/ (4 arquivos)
-✓ docs/ (pasta vazia)
-✓ src/ (pasta vazia)
+✓ docs/
+✓ src/
 ```
 
 ---
@@ -411,6 +417,7 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 
 | Quando você precisa de... | Leia |
 |--------------------------|------|
+| Está começando e tem dúvidas | `GETTING_STARTED.md` |
 | Entender as regras da colaboração com o AI | `AI_PROJECT_PROTOCOL.md` |
 | Saber qual skill ativar para uma tarefa | `SKILLS_INDEX.md` |
 | Iniciar projeto robusto (SaaS, time, cliente) | `START_NEW_PROJECT.md` |
