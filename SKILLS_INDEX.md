@@ -227,23 +227,45 @@ Algumas tarefas ativam naturalmente mais de uma skill. Use a primeira listada co
 
 ---
 
+## Skills por Modo
+
+### Modo Lite — 3 skills principais
+
+| Skill | Quando |
+|-------|--------|
+| `business_analyst` | Sempre — conduz a Descoberta Lite (3 blocos) |
+| `project_manager` | Gerar e organizar o backlog |
+| skill do domínio | `frontend`, `backend` ou `database` conforme a tarefa |
+
+As skills `devops`, `ui_ux` e `documentation` são **opcionais** no modo Lite — use se a tarefa exigir.
+
+### Modo Completo — todas as 9 skills disponíveis
+
+Use o mapeamento completo das seções anteriores.
+
+---
+
 ## Como Usar na Prática
 
 ```
 1. Receber uma tarefa do usuário
 
-2. Consultar este índice:
+2. Verificar o modo do projeto (Lite ou Completo)
+   → project-lite/PROJECT_CONTEXT.md existe? → Modo Lite
+   → project/PROJECT_CONTEXT.md existe?      → Modo Completo
+
+3. Consultar este índice:
    - Qual tipo de tarefa é?
    - Quais palavras-chave aparecem na descrição?
 
-3. Identificar a(s) skill(s) relevante(s)
+4. Identificar a(s) skill(s) relevante(s)
 
-4. Ler o arquivo da skill antes de começar
+5. Ler o arquivo da skill antes de começar
    → O arquivo define Responsabilidades, Checklist e Perguntas Obrigatórias
 
-5. Se houver dúvida sobre o escopo ou o que fazer:
+6. Se houver dúvida sobre o escopo ou o que fazer:
    → Ativar business_analyst primeiro
 
-6. Se houver dúvida sobre por onde começar:
+7. Se houver dúvida sobre por onde começar:
    → Ativar project_manager primeiro
 ```

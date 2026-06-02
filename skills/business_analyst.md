@@ -270,6 +270,134 @@ Próximos passos sugeridos (ver START_NEW_PROJECT.md):
 
 ---
 
+## MODO DE DESCOBERTA LITE
+
+> Ativado quando `project-lite/PROJECT_CONTEXT.md` está vazio **ou** quando o usuário informa `Modo: Lite`.
+> Versão compacta da entrevista — 3 blocos em vez de 6. Tempo estimado: 20 a 30 minutos.
+> Mesmas regras de condução do modo completo: um bloco por vez, resumo ao final de cada bloco, só avança após confirmação.
+
+### Regra de ativação
+
+```
+SE project-lite/PROJECT_CONTEXT.md está vazio
+   OU usuário informou "Modo: Lite"
+ENTÃO
+  → Iniciar Modo de Descoberta Lite
+  → Usar apenas os 3 blocos abaixo
+  → Gerar project-lite/PROJECT_CONTEXT.md ao final (não project/PROJECT_CONTEXT.md)
+```
+
+---
+
+### BLOCO L1 — Problema e Usuário
+
+> Combina os Blocos 1 e 2 do modo completo. Foco no essencial.
+
+**Perguntas:**
+
+1. Descreva o problema que você quer resolver em duas ou três frases.
+2. Quem vai usar este sistema? Em qual contexto (dispositivo, frequência, momento do dia)?
+3. Como este problema é resolvido hoje? Por que não é suficiente?
+4. O que muda para o usuário quando o problema estiver resolvido?
+
+**Resumo do bloco:**
+```
+Problema: [...]
+Usuário principal: [...]
+Contexto de uso: [...]
+Mudança esperada: [...]
+
+Confirma? (S/N)
+```
+
+---
+
+### BLOCO L2 — MVP e Requisitos
+
+> Combina os Blocos 3 e 4 do modo completo. Foco no mínimo viável.
+
+**Perguntas:**
+
+1. Em uma frase: o que este projeto precisa entregar para ser considerado pronto?
+2. Quais são as funcionalidades obrigatórias — sem as quais o projeto não serve para nada?
+3. Para cada funcionalidade: o que define que ela está feita corretamente?
+4. O que fica deliberadamente de fora desta primeira entrega?
+
+**Resumo do bloco:**
+```
+Objetivo: [...]
+
+MVP — funcionalidades obrigatórias:
+  - [funcionalidade] — critério: [...]
+  - [funcionalidade] — critério: [...]
+
+Fora do MVP:
+  - [...]
+
+Confirma? (S/N)
+```
+
+---
+
+### BLOCO L3 — Restrições e Riscos Principais
+
+> Combina os Blocos 5 e 6 do modo completo. Foco só no crítico.
+
+**Perguntas:**
+
+1. Há prazo definido? Se sim, qual é e o que acontece se não for cumprido?
+2. Há alguma tecnologia obrigatória ou proibida?
+3. Há restrição de custo? (sem serviços pagos, budget limitado)
+4. O que você mais teme que dê errado neste projeto?
+5. Já tentou resolver este problema antes? O que aconteceu?
+
+**Resumo do bloco:**
+```
+Restrições:
+  - Prazo: [...]
+  - Tecnologia: [...]
+  - Custo: [...]
+
+Riscos principais:
+  - [risco] — probabilidade: [Alta/Média/Baixa]
+
+Confirma? (S/N)
+```
+
+---
+
+### Encerramento da Descoberta Lite
+
+```
+DESCOBERTA LITE CONCLUÍDA
+──────────────────────────
+✓ Bloco L1 — Problema e Usuário
+✓ Bloco L2 — MVP e Requisitos
+✓ Bloco L3 — Restrições e Riscos
+
+Posso gerar o project-lite/PROJECT_CONTEXT.md agora. Prossigo?
+```
+
+### Geração do project-lite/PROJECT_CONTEXT.md
+
+Após confirmação:
+
+1. Preencher `project-lite/PROJECT_CONTEXT.md` com o conteúdo levantado.
+2. Campos não levantados recebem `[A DEFINIR]`.
+3. Apresentar para revisão antes de salvar.
+4. Salvar apenas após aprovação explícita.
+5. Após salvar, informar:
+
+```
+project-lite/PROJECT_CONTEXT.md criado e aprovado.
+
+Próximos passos (ver START_LITE_PROJECT.md):
+  → Etapa 4: Gerar backlog com project_manager (máx. 15 tarefas)
+  → Etapa 5: Iniciar desenvolvimento
+```
+
+---
+
 ## Responsabilidades (Modo Normal)
 
 Aplicado quando project/PROJECT_CONTEXT.md já existe e a tarefa é de análise de feature ou requisito:

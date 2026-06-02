@@ -7,6 +7,27 @@
 
 ---
 
+## [1.1.0] — 2026-06-01
+
+Adição do modo Lite, licença MIT e guia de contribuição.
+
+### Adicionado
+
+- `START_LITE_PROJECT.md` — guia de 5 etapas para projetos simples (portfólio, TCC, MVP solo, freelance pequeno)
+- `project-lite/PROJECT_CONTEXT.md` — template simplificado com 4 campos: problema/usuário, MVP, restrições e decisões técnicas
+- `project-lite/STATUS.md` — template enxuto com fase, em andamento, próximos passos e bloqueios
+- `skills/business_analyst.md` — **Modo de Descoberta Lite** com 3 blocos (L1: Problema e Usuário, L2: MVP e Requisitos, L3: Restrições e Riscos). Tempo estimado: 20–30 min vs. 60 min do modo completo
+- `LICENSE` — licença MIT
+- `CONTRIBUTING.md` — guia de contribuição com padrões de escrita, fluxo de PR e o que é bem-vindo
+
+### Atualizado
+
+- `README.md` — tabela de comparação Lite vs. Completo, mensagens de abertura para cada modo, checklist de verificação com `project-lite/`, referência rápida expandida
+- `SKILLS_INDEX.md` — seção "Skills por Modo" com subset recomendado para o modo Lite e lógica de detecção automática do modo
+- `CHANGELOG.md` — convenções de versionamento e roadmap
+
+---
+
 ## [1.0.0] — 2026-06-01
 
 Versão inicial do framework. Estabelece a estrutura base de governança para desenvolvimento de software com AI.

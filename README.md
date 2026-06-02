@@ -29,11 +29,18 @@ O framework não é uma biblioteca de código. É uma estrutura de **processo e 
 Framework Base Projetos/
 │
 ├── README.md                    ← Você está aqui
-├── START_NEW_PROJECT.md         ← Guia passo a passo para iniciar projetos
+├── START_NEW_PROJECT.md         ← Guia completo (SaaS, times, projetos robustos)
+├── START_LITE_PROJECT.md        ← Guia simplificado (portfólio, TCC, MVP solo)
 ├── AI_PROJECT_PROTOCOL.md       ← Regras de colaboração entre você e o AI
 ├── SKILLS_INDEX.md              ← Mapa: qual especialista acionar por tipo de tarefa
-├── project/PROJECT_CONTEXT.md           ← Preenchido por projeto (vazio no template)
-├── project/STATUS.md                    ← Estado atual (vazio no template)
+│
+├── project/                     ← Arquivos do projeto — modo Completo
+│   ├── PROJECT_CONTEXT.md       ← 11 seções (vazio no template)
+│   └── STATUS.md                ← Completo (vazio no template)
+│
+├── project-lite/                ← Arquivos do projeto — modo Lite
+│   ├── PROJECT_CONTEXT.md       ← 4 campos (vazio no template)
+│   └── STATUS.md                ← Simplificado (vazio no template)
 │
 ├── skills/                      ← Especialistas ativáveis
 │   ├── business_analyst.md      ← Requisitos, descoberta e regras de negócio
@@ -104,10 +111,13 @@ Confirme que todos os arquivos estão presentes antes de usar:
 ```
 ✓ README.md
 ✓ START_NEW_PROJECT.md
+✓ START_LITE_PROJECT.md
 ✓ AI_PROJECT_PROTOCOL.md
 ✓ SKILLS_INDEX.md
-✓ project/PROJECT_CONTEXT.md (vazio)
-✓ project/STATUS.md (vazio)
+✓ project/PROJECT_CONTEXT.md (vazio — modo Completo)
+✓ project/STATUS.md (vazio — modo Completo)
+✓ project-lite/PROJECT_CONTEXT.md (vazio — modo Lite)
+✓ project-lite/STATUS.md (vazio — modo Lite)
 ✓ skills/ (9 arquivos)
 ✓ standards/ (5 arquivos)
 ✓ templates/ (5 arquivos)
@@ -122,9 +132,24 @@ Confirme que todos os arquivos estão presentes antes de usar:
 
 O framework opera em dois momentos:
 
-**1. Ao iniciar um projeto** — você copia o framework, o AI conduz a descoberta e gera a documentação base.
+**1. Ao iniciar um projeto** — você copia o framework, escolhe o modo (Completo ou Lite), o AI conduz a descoberta e gera a documentação base.
 
 **2. Durante o desenvolvimento** — a cada tarefa, o AI consulta o SKILLS_INDEX, ativa o especialista correto e segue o protocolo definido em AI_PROJECT_PROTOCOL.md.
+
+### Qual modo escolher?
+
+| | Lite | Completo |
+|-|------|---------|
+| Portfólio, TCC, estudo | ✓ | — |
+| MVP solo ou freelance pequeno | ✓ | — |
+| Prazo curto (< 2 meses) | ✓ | — |
+| SaaS, sistema web de longa duração | — | ✓ |
+| Time de 2+ pessoas | — | ✓ |
+| Cliente corporativo | — | ✓ |
+| Descoberta | 3 blocos (~20 min) | 6 blocos (~60 min) |
+| PROJECT_CONTEXT | 4 campos | 11 seções |
+| Skills ativas | 3 principais | Todas as 9 |
+| Standards obrigatórios | Segurança + Qualidade | Todos os 5 |
 
 ---
 
@@ -141,11 +166,19 @@ Para:    Projetos/nome-do-projeto/
 
 ### 2. Abrir no editor e iniciar conversa com o AI
 
-Cole esta mensagem na primeira conversa:
-
+**Modo Lite** — cole esta mensagem:
 ```
 Primeira mensagem da conversa.
+Projeto: [nome do projeto]
+Modo: Lite
 
+Leia: AI_PROJECT_PROTOCOL.md e skills/business_analyst.md
+project-lite/PROJECT_CONTEXT.md está vazio — inicie o Modo de Descoberta Lite.
+```
+
+**Modo Completo** — cole esta mensagem:
+```
+Primeira mensagem da conversa.
 Projeto: [nome do projeto]
 
 Leia os seguintes arquivos antes de qualquer coisa:
@@ -155,18 +188,16 @@ Leia os seguintes arquivos antes de qualquer coisa:
 Confirme que leu e aguarde minha instrução.
 ```
 
-### 3. Ativar o Business Analyst e iniciar a descoberta
+### 3. Descoberta
 
+**Lite** — 3 blocos (~20 min):
 ```
-Ative a skill business_analyst.
-Leia o arquivo skills/business_analyst.md.
-
-project/PROJECT_CONTEXT.md está vazio — inicie o Modo de Descoberta.
-Conduza a entrevista estruturada para descobrir o projeto.
+Bloco L1 → Problema e Usuário
+Bloco L2 → MVP e Requisitos
+Bloco L3 → Restrições e Riscos
 ```
 
-O AI conduzirá uma entrevista de 6 blocos:
-
+**Completo** — 6 blocos (~60 min):
 ```
 Bloco 1 → Problema
 Bloco 2 → Usuários e Stakeholders
@@ -176,7 +207,7 @@ Bloco 5 → Restrições
 Bloco 6 → Riscos
 ```
 
-Ao final, o AI gera o `project/PROJECT_CONTEXT.md` para sua aprovação.
+Ao final, o AI gera o `PROJECT_CONTEXT.md` do modo escolhido para sua aprovação.
 
 ### 4. Gerar backlog e arquitetura
 
@@ -382,9 +413,12 @@ Cada standard define um **critério mínimo** para produção e **critérios rec
 |--------------------------|------|
 | Entender as regras da colaboração com o AI | `AI_PROJECT_PROTOCOL.md` |
 | Saber qual skill ativar para uma tarefa | `SKILLS_INDEX.md` |
-| Iniciar um novo projeto passo a passo | `START_NEW_PROJECT.md` |
-| Entender o contexto do projeto atual | `project/PROJECT_CONTEXT.md` |
-| Ver o que está em andamento e o que vem a seguir | `project/STATUS.md` |
+| Iniciar projeto robusto (SaaS, time, cliente) | `START_NEW_PROJECT.md` |
+| Iniciar projeto simples (portfólio, TCC, MVP) | `START_LITE_PROJECT.md` |
+| Contexto do projeto — modo Completo | `project/PROJECT_CONTEXT.md` |
+| Contexto do projeto — modo Lite | `project-lite/PROJECT_CONTEXT.md` |
+| Estado atual — modo Completo | `project/STATUS.md` |
+| Estado atual — modo Lite | `project-lite/STATUS.md` |
 | Ver todas as tarefas e prioridades | `docs/backlog.md` |
 | Ver as decisões técnicas tomadas | `docs/decisions/` |
 | Usar um especialista | `skills/[nome].md` |
